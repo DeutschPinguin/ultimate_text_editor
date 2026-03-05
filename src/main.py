@@ -8,6 +8,7 @@ def main ():
     
     fr = ttk.Frame(root, padding=(3, 3, 12, 12))
     fr.grid(column=0, row=0, sticky='nwes')
+    root.geometry(newGeometry="720x640+" + str(int(root.winfo_screenwidth() / 4)) + "+" + str(int(root.winfo_screenheight() / 4)))
 
     files.init(root)
     menu.init(root)
