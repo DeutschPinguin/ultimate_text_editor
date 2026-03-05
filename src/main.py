@@ -1,10 +1,14 @@
 from tkinter import Tk, ttk
-import test
+import menu, hotkeys
 
 
 def main ():
     root = Tk()
-    test.addTo(root)
+    root.title('==- ULTIMATE TEXT EDITOR 2000 -==')
+    
+    menu.init(root)
+    hotkeys.init(root)
+
     root.mainloop()
 
 
